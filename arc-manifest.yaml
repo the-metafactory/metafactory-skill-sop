@@ -1,0 +1,24 @@
+name: SOP
+version: 1.0.0
+type: skill
+description: "SOP authoring skill — write effective Standard Operating Procedures using the 7-layer prompt architecture"
+author:
+  name: metafactory
+  github: the-metafactory
+repository: "the-metafactory/pai-skill-sop"
+
+provides:
+  skill:
+    - trigger: "create sop"
+    - trigger: "write sop"
+    - trigger: "sop template"
+    - trigger: "audit sop"
+    - trigger: "review sop"
+
+capabilities:
+  filesystem:
+    read:
+      - "docs/sops/"
+      - "*.md"
+    write:
+      - "docs/sops/"
